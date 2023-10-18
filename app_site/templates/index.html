@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <title>Calendar Widget</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
   </head>
   <body>
     <div class="calendar">
@@ -26,6 +27,7 @@
       </div>
     </div>
     <div id="root"></div>
-    <script src="script.js"></script>
+    <script src="{% static 'script.js' %}"></script>
+    <script> fixed_days="{{ days }}"; create_calendar(fixed_days);</script>
   </body>
 </html>

@@ -69,8 +69,7 @@ body {
 .calendar__day-number--current {
   background-color: #23839D;
   border-radius: 50%;
-  box-shadow: 0 0 0 0.4rem #23839D;
+  box-shadow: 0 0 0 0.2rem #23839D;
   color: #FFF;
-  background-image: linear-gradient(red, yellow);
-  background: linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #dd0000 66%, #ffc608 66%)
+  background-image: linear-gradient(red, #ffc608);
 }
