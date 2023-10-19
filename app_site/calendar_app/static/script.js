@@ -54,6 +54,7 @@ function create_calendar(fixed_days){
         checkbox.name = "color";
         checkbox.value = color;
         checkbox.id = id;
+        checkbox.classList.add('calendar__checkbox')
 
         checkbox.addEventListener('change', function() {
             if (this.checked) {
