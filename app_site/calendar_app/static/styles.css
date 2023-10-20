@@ -9,18 +9,23 @@ html * {
 
 body {
   background-color: #A9DDEB;
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   font-family: Helvetica, sans-serif;
   font-size: 1.6rem;
-  min-height: 100vh;
-  place-content: center;
+  min-height: 90vh;
 }
 
 .calendar {
+  flex-direction: column;
   background-color: #FFF;
   border-radius: 0.8rem;
   box-shadow: 0 0.8rem 1.6rem rgba(35, 131, 157, 0.2);
   padding: 3.2rem;
+  margin-right: 2%;
+
 }
 .calendar__header {
   font-weight: bold;
@@ -58,6 +63,7 @@ body {
 }
 .calendar__day-number {
   align-content: center;
+  border-radius: 50%;
   justify-content: center;
   aspect-ratio: 1;
   color: #000;
@@ -71,12 +77,10 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 0 0.2rem #23839D;
   color: #FFF;
-  background-image: linear-gradient(red, #ffc608);
+  background-image: linear-gradient(red, orange);
 }
 
 #root {
-  grid-column: 2 / 2;
-  grid-row: 1 / 1;
   background-color: green;
   padding: 3.2rem;
   display: flex;

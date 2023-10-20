@@ -28,6 +28,6 @@
     </div>
     <div id="root"></div>
     <script src="{% static 'script.js' %}"></script>
-    <script> fixed_days="{{ days }}"; create_calendar(fixed_days);</script>
+    <script> params={{ params|safe }}; create_calendar(params);</script>
   </body>
 </html>
